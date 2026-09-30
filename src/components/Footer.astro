@@ -1,0 +1,43 @@
+---
+import { BUSINESS, SITE_TITLE } from '../consts';
+---
+<footer class="site-footer">
+	<div class="container">
+		<div class="footer-grid">
+			<div>
+				<h4>{SITE_TITLE}</h4>
+				<p>Professional septic tank pumping, inspection, and repair for Niagara Falls and Western New York.</p>
+				<p style="margin-top:0.75rem">{BUSINESS.addressShort}</p>
+			</div>
+			<div>
+				<h4>Services</h4>
+				<ul>
+					<li><a href="/services/septic-pumping">Septic Tank Pumping</a></li>
+					<li><a href="/services/septic-inspection">Septic Inspection</a></li>
+					<li><a href="/services/emergency-septic">Emergency Service</a></li>
+					<li><a href="/services/septic-repair">Septic Repair</a></li>
+					<li><a href="/services/maintenance">Maintenance &amp; Care</a></li>
+				</ul>
+			</div>
+			<div>
+				<h4>Quick Links</h4>
+				<ul>
+					<li><a href="/service-areas">Service Areas</a></li>
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/contact">Contact / Free Quote</a></li>
+				</ul>
+			</div>
+			<div>
+				<h4>Contact</h4>
+				<ul>
+					<li><a href={`tel:${BUSINESS.phoneTel}`}>{BUSINESS.phone}</a></li>
+					<li><a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a></li>
+					<li>{BUSINESS.hours}</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			&copy; {new Date().getFullYear()} {SITE_TITLE}. All rights reserved. Serving Niagara County, NY.
+		</div>
+	</div>
+</footer>

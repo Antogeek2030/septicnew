@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { BUSINESS } from '../../consts';
+---
+<Layout title="Septic Inspection Niagara Falls, NY" description="Professional septic system inspections for home sales, insurance, or peace of mind in Niagara Falls and Wilson, NY.">
+	<section class="page-hero">
+		<div class="container">
+			<h1>Septic System Inspection</h1>
+			<p>Honest assessments with clear written reports — no pressure sales.</p>
+		</div>
+	</section>
+	<section class="content-block">
+		<div class="container prose">
+			<h2>When an Inspection Makes Sense</h2>
+			<p>
+				Buying or selling a home, resolving a real estate contingency, checking after heavy use,
+				or simply wanting peace of mind — a professional inspection gives you clear information
+				about the condition of the tank and system components.
+			</p>
+			<h3>What We Check</h3>
+			<ul>
+				<li>Tank location, lids, and access</li>
+				<li>Sludge and scum levels</li>
+				<li>Baffles and inlet/outlet condition</li>
+				<li>Effluent filter (if present)</li>
+				<li>Signs of past or active backups</li>
+				<li>Visible drain field indicators when accessible</li>
+				<li>Overall system age and maintenance history notes</li>
+			</ul>
+			<h3>Clear Written Report</h3>
+			<p>
+				You receive a straightforward summary of findings and prioritized recommendations.
+				If pumping or repairs are needed, we explain options and costs so you can decide with confidence.
+			</p>
+			<p style="margin-top:1.75rem">
+				<a href="/contact" class="btn btn-navy">Schedule an Inspection</a>
+				<a href={`tel:${BUSINESS.phoneTel}`} class="btn btn-primary" style="margin-left:0.5rem">Call {BUSINESS.phone}</a>
+			</p>
+		</div>
+	</section>
+</Layout>

@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { BUSINESS } from '../../consts';
+---
+<Layout title="Septic Tank Pumping Niagara Falls, NY" description="Professional septic tank pumping in Niagara Falls, Wilson, and Western New York. Protect your drain field with scheduled maintenance.">
+	<section class="page-hero">
+		<div class="container">
+			<h1>Septic Tank Pumping</h1>
+			<p>Complete, professional pumping that removes sludge and protects your system.</p>
+		</div>
+	</section>
+	<section class="content-block">
+		<div class="container prose">
+			<h2>Reliable Septic Tank Pumping for Western New York Homes</h2>
+			<p>
+				Regular pumping is the single most important thing you can do for a septic system.
+				Solids build up over time; if left too long they migrate into the drain field and cause costly failures.
+				We provide thorough residential and light commercial septic tank pumping across Niagara Falls, Wilson, and nearby communities.
+			</p>
+			<h3>What’s Included</h3>
+			<ul>
+				<li>Locate and access tank lids or risers</li>
+				<li>Complete removal of liquid, sludge, and scum</li>
+				<li>Visual check of baffles and condition when accessible</li>
+				<li>Filter cleaning when present</li>
+				<li>Proper disposal at approved facilities</li>
+				<li>Recommendations for next service interval</li>
+			</ul>
+			<h3>How Often Should You Pump?</h3>
+			<p>
+				Most households need pumping every 3–5 years depending on tank size, household size, and water use.
+				Homes with garbage disposals, high occupancy, or smaller tanks may need more frequent service.
+				We help you set a realistic schedule so you never get surprised by a backup.
+			</p>
+			<p style="margin-top:1.75rem">
+				<a href="/contact" class="btn btn-navy">Request a Pumping Quote</a>
+				<a href={`tel:${BUSINESS.phoneTel}`} class="btn btn-primary" style="margin-left:0.5rem">Call {BUSINESS.phone}</a>
+			</p>
+		</div>
+	</section>
+</Layout>

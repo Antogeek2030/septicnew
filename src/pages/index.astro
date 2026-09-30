@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { BUSINESS, SITE_DESCRIPTION } from '../consts';
+---
+<Layout title="Septic Pumping Niagara Falls NY | Local Septic Tank Service" description={SITE_DESCRIPTION}>
+	<section class="hero">
+		<div class="container">
+			<h1>Septic Tank Pumping &amp; Service Experts</h1>
+			<p>
+				Trusted local septic professionals serving Niagara Falls, Wilson, and Western New York.
+				Reliable pumping, honest pricing, and systems that keep working — guaranteed.
+			</p>
+			<div class="hero-actions">
+				<a href={`tel:${BUSINESS.phoneTel}`} class="btn btn-primary">Call Us: {BUSINESS.phone}</a>
+				<a href="/contact" class="btn btn-outline">Get a Free Quote</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<h2 class="section-title">Our Core Septic Services</h2>
+			<p class="section-sub">From routine pumping to emergency response, we keep Niagara County septic systems running year-round.</p>
+			<div class="cards">
+				<article class="card">
+					<h3>Septic Tank Pumping</h3>
+					<p>Complete removal of sludge and effluent. Scheduled maintenance that protects your drain field and prevents backups.</p>
+					<a href="/services/septic-pumping" class="more">Learn more →</a>
+				</article>
+				<article class="card">
+					<h3>Septic Inspection</h3>
+					<p>Thorough inspections for home sales, real estate transactions, or peace of mind. Clear written reports included.</p>
+					<a href="/services/septic-inspection" class="more">Learn more →</a>
+				</article>
+				<article class="card">
+					<h3>Emergency Service</h3>
+					<p>Fast response when backups or system failures hit. We stop the problem and restore function as quickly as possible.</p>
+					<a href="/services/emergency-septic" class="more">Learn more →</a>
+				</article>
+				<article class="card">
+					<h3>Septic Repair</h3>
+					<p>Fix baffles, lids, filters, pumps, and common system issues before they become expensive failures.</p>
+					<a href="/services/septic-repair" class="more">Learn more →</a>
+				</article>
+				<article class="card">
+					<h3>Maintenance &amp; Care</h3>
+					<p>Filter cleaning, riser installs, and ongoing care plans that extend system life and lower long-term cost.</p>
+					<a href="/services/maintenance" class="more">Learn more →</a>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-alt">
+		<div class="container">
+			<h2 class="section-title">What Local Homeowners Say</h2>
+			<p class="section-sub">Real feedback from customers who trusted us with their septic systems.</p>
+			<div class="testimonials">
+				<blockquote class="quote">
+					<p>“They pumped our tank on schedule, found a clogged filter, and fixed it the same day. Clean, professional, and fair price.”</p>
+					<cite>— Sarah M., Niagara Falls, NY</cite>
+				</blockquote>
+				<blockquote class="quote">
+					<p>“Emergency backup on a Sunday. They came out within hours, pumped us out, and explained exactly what went wrong. Highly recommend.”</p>
+					<cite>— James T., Wilson, NY</cite>
+				</blockquote>
+				<blockquote class="quote">
+					<p>“Needed an inspection for a house sale. Report was clear, fast, and the buyer’s inspector had no issues. Straightforward and honest.”</p>
+					<cite>— Michelle R., Lockport, NY</cite>
+				</blockquote>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta-band">
+		<div class="container">
+			<h2>Ready for Reliable Septic Service?</h2>
+			<p>Local, experienced, and ready to help. Serving Niagara Falls, Wilson, and nearby communities.</p>
+			<div class="hero-actions">
+				<a href={`tel:${BUSINESS.phoneTel}`} class="btn btn-primary">Call {BUSINESS.phone}</a>
+				<a href="/contact" class="btn btn-outline">Request a Quote</a>
+			</div>
+		</div>
+	</section>
+</Layout>

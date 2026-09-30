@@ -1,0 +1,71 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { BUSINESS } from '../consts';
+---
+<Layout title="Contact Us" description="Request a free septic pumping quote or ask a question. We serve Niagara Falls, Wilson, and Western New York.">
+	<section class="page-hero">
+		<div class="container">
+			<h1>Contact Us</h1>
+			<p>Request a free quote or ask a question. We respond quickly to Niagara Falls and Wilson area homeowners.</p>
+		</div>
+	</section>
+
+	<section class="content-block">
+		<div class="container contact-grid">
+			<div class="contact-info">
+				<h2>Get in Touch</h2>
+				<dl>
+					<dt>Phone</dt>
+					<dd><a href={`tel:${BUSINESS.phoneTel}`}>{BUSINESS.phone}</a></dd>
+					<dt>Email</dt>
+					<dd><a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a></dd>
+					<dt>Address</dt>
+					<dd>{BUSINESS.address}</dd>
+					<dt>Hours</dt>
+					<dd>{BUSINESS.hours}</dd>
+					<dt>Service Area</dt>
+					<dd>Niagara Falls, Wilson, Lockport, Lewiston, Youngstown, Grand Island, and nearby communities.</dd>
+				</dl>
+				<p style="margin-top:1.5rem">
+					<a href={`tel:${BUSINESS.phoneTel}`} class="btn btn-navy">Call Now</a>
+				</p>
+			</div>
+			<div class="form-card">
+				<h3>Request a Free Quote</h3>
+				<form method="POST" action="https://formspree.io/f/YOUR_FORM_ID" name="contact">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" required />
+					</div>
+					<div class="form-group">
+						<label for="phone">Phone</label>
+						<input type="tel" id="phone" name="phone" required />
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" />
+					</div>
+					<div class="form-group">
+						<label for="service">Service Needed</label>
+						<select id="service" name="service">
+							<option value="pumping">Septic Tank Pumping</option>
+							<option value="inspection">Inspection</option>
+							<option value="emergency">Emergency Service</option>
+							<option value="repair">Repair</option>
+							<option value="maintenance">Maintenance</option>
+							<option value="other">Other / Not Sure</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="message">Message / Address</label>
+						<textarea id="message" name="message" placeholder="Property address and any details..."></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
+				</form>
+				<p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.75rem;margin-bottom:0">
+					Replace the form action with your Formspree (or similar) endpoint before going live.
+				</p>
+			</div>
+		</div>
+	</section>
+</Layout>

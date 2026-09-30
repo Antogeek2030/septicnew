@@ -1,0 +1,38 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { BUSINESS } from '../../consts';
+---
+<Layout title="Septic Maintenance Niagara Falls, NY" description="Ongoing septic maintenance, filter care, and system protection for Niagara Falls and Wilson area homes.">
+	<section class="page-hero">
+		<div class="container">
+			<h1>Septic Maintenance &amp; Care</h1>
+			<p>Protect your investment with practical, scheduled care.</p>
+		</div>
+	</section>
+	<section class="content-block">
+		<div class="container prose">
+			<h2>Why Maintenance Matters</h2>
+			<p>
+				A well-maintained septic system can last decades. Neglect leads to premature drain field failure —
+				one of the most expensive residential repairs. Simple, regular care is far cheaper than replacement.
+			</p>
+			<h3>Our Maintenance Services</h3>
+			<ul>
+				<li>Scheduled pumping on a recommended interval</li>
+				<li>Effluent filter cleaning and replacement</li>
+				<li>Riser and lid upgrades for easier access</li>
+				<li>Visual system checks at each visit</li>
+				<li>Usage and care tips tailored to your household</li>
+			</ul>
+			<h3>Integrated with Pumping</h3>
+			<p>
+				When we pump your tank we also evaluate filters, baffles, and access.
+				Addressing small items together often saves you a second trip and keeps the system healthier longer.
+			</p>
+			<p style="margin-top:1.75rem">
+				<a href="/contact" class="btn btn-navy">Set Up Maintenance</a>
+				<a href={`tel:${BUSINESS.phoneTel}`} class="btn btn-primary" style="margin-left:0.5rem">Call {BUSINESS.phone}</a>
+			</p>
+		</div>
+	</section>
+</Layout>

@@ -1,0 +1,23 @@
+---
+import { BUSINESS } from '../consts';
+const path = Astro.url.pathname;
+---
+<header class="site-header">
+	<div class="container header-inner">
+		<a href="/" class="logo">Septic <span>Pumping</span> Niagara Falls</a>
+		<button class="menu-toggle" type="button" aria-label="Toggle menu" id="menuBtn">☰</button>
+		<nav class="nav" id="mainNav">
+			<a href="/" class={path === '/' ? 'active' : ''}>Home</a>
+			<a href="/services/septic-pumping" class={path.startsWith('/services') ? 'active' : ''}>Services</a>
+			<a href="/service-areas" class={path === '/service-areas' ? 'active' : ''}>Service Areas</a>
+			<a href="/blog" class={path.startsWith('/blog') ? 'active' : ''}>Blog</a>
+			<a href="/contact" class={path === '/contact' ? 'active' : ''}>Contact</a>
+			<a href={`tel:${BUSINESS.phoneTel}`} class="nav-phone">{BUSINESS.phone}</a>
+		</nav>
+	</div>
+</header>
+<script>
+	const btn = document.getElementById('menuBtn');
+	const nav = document.getElementById('mainNav');
+	btn?.addEventListener('click', () => nav?.classList.toggle('open'));
+</script>

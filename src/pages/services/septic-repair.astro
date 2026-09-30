@@ -1,0 +1,39 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { BUSINESS } from '../../consts';
+---
+<Layout title="Septic Repair Niagara Falls, NY" description="Septic system repair including baffles, lids, filters, and common issues for homes in Niagara Falls and Wilson, NY.">
+	<section class="page-hero">
+		<div class="container">
+			<h1>Septic System Repair</h1>
+			<p>Fix problems early before they damage the drain field or your home.</p>
+		</div>
+	</section>
+	<section class="content-block">
+		<div class="container prose">
+			<h2>Common Repairs We Handle</h2>
+			<p>
+				Small septic problems rarely stay small. Damaged baffles, missing lids, clogged filters,
+				or failing pumps can lead to backups and expensive drain field repairs if ignored.
+			</p>
+			<ul>
+				<li>Baffle replacement and repair</li>
+				<li>Tank lid and riser installation</li>
+				<li>Effluent filter replacement and cleaning</li>
+				<li>Pump and float switch issues</li>
+				<li>Access improvements for easier future service</li>
+				<li>Minor component repairs found during pumping</li>
+			</ul>
+			<h3>Our Process</h3>
+			<p>
+				We start with a clear inspection and explanation of what we find.
+				You receive a straightforward quote with no pressure.
+				Once approved, we complete the work carefully and leave the site clean.
+			</p>
+			<p style="margin-top:1.75rem">
+				<a href="/contact" class="btn btn-navy">Request a Repair Quote</a>
+				<a href={`tel:${BUSINESS.phoneTel}`} class="btn btn-primary" style="margin-left:0.5rem">Call {BUSINESS.phone}</a>
+			</p>
+		</div>
+	</section>
+</Layout>

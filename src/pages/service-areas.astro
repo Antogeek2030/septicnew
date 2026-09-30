@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { BUSINESS } from '../consts';
+---
+<Layout title="Service Areas" description="Septic pumping and service throughout Niagara Falls, Wilson, Lockport, and surrounding Western New York communities.">
+	<section class="page-hero">
+		<div class="container">
+			<h1>Service Areas</h1>
+			<p>Local septic professionals focused on Niagara County and nearby communities.</p>
+		</div>
+	</section>
+
+	<section class="content-block">
+		<div class="container">
+			<div class="prose" style="max-width:none;margin-bottom:2rem">
+				<h2>Where We Work</h2>
+				<p>
+					We are based at <strong>{BUSINESS.addressShort}</strong> and provide residential and light commercial septic tank pumping,
+					inspection, repair, and emergency service throughout the Niagara region. We understand local soil conditions,
+					seasonal challenges, and New York Department of Health expectations.
+				</p>
+				<h3>Primary Service Areas</h3>
+				<ul>
+					{BUSINESS.serviceAreas.map((area) => (
+						<li><strong>{area}</strong></li>
+					))}
+				</ul>
+				<p>
+					Not sure if we cover your address? Call us — we often serve additional nearby towns and will let you know quickly.
+				</p>
+			</div>
+
+			<h2 style="margin-bottom:1rem">Our Location</h2>
+			<p style="color:var(--text-muted);margin-bottom:1rem">{BUSINESS.address}</p>
+			<div class="map-wrap">
+				<iframe
+					title="Map of 3035 Daniels Rd, Wilson, NY 14172"
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+					src="https://www.google.com/maps?q=3035+Daniels+Rd,+Wilson,+NY+14172&output=embed"
+					allowfullscreen
+				></iframe>
+			</div>
+		</div>
+	</section>
+</Layout>

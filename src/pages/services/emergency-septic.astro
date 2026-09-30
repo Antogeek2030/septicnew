@@ -1,0 +1,37 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { BUSINESS } from '../../consts';
+---
+<Layout title="Emergency Septic Service Niagara Falls" description="Fast emergency septic pumping and response for backups and system failures in Niagara Falls, Wilson, and nearby areas.">
+	<section class="page-hero">
+		<div class="container">
+			<h1>Emergency Septic Service</h1>
+			<p>When backups or failures happen, we respond quickly to protect your home.</p>
+		</div>
+	</section>
+	<section class="content-block">
+		<div class="container prose">
+			<h2>When You Need Help Fast</h2>
+			<p>
+				Sewage backups, slow drains throughout the house, sewage odors, or wet spots over the drain field
+				require prompt attention. Delaying can mean interior damage, health hazards, and higher repair costs.
+			</p>
+			<h3>What We Provide</h3>
+			<ul>
+				<li>Priority response when possible</li>
+				<li>Emergency pumping to stop overflows</li>
+				<li>Assessment of the cause</li>
+				<li>Temporary measures to restore use</li>
+				<li>Clear recommendations for permanent fixes</li>
+			</ul>
+			<h3>Act Quickly</h3>
+			<p>
+				The sooner the tank is pumped and the issue identified, the less damage your home and drain field will suffer.
+				Call us as soon as you notice a problem — leave a message after hours and we will return your call.
+			</p>
+			<p style="margin-top:1.75rem">
+				<a href={`tel:${BUSINESS.phoneTel}`} class="btn btn-primary">Emergency Call: {BUSINESS.phone}</a>
+			</p>
+		</div>
+	</section>
+</Layout>
